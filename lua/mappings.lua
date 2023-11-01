@@ -32,5 +32,3 @@ if telescope_status_ok then
 end
 
 keymap("n", "<Leader>n", ":Neotree toggle<CR>", opts)
-keymap("n", "<Leader>w", ":w<CR>", opts)
-keymap("n", "<Leader>Q", ":qa<CR>", opts)
