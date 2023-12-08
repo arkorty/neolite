@@ -29,6 +29,7 @@ local plugins = {
 	"nvim-treesitter/nvim-treesitter",
 	"simrat39/rust-tools.nvim",
 	"nvim-lualine/lualine.nvim",
+	"norcalli/nvim-colorizer.lua",
 	{
 		"ellisonleao/gruvbox.nvim",
 		priority = 1000,
