@@ -3,9 +3,14 @@ if not ok then
 	return
 end
 
+local transparent = true
+if vim.g.neovide then
+	transparent = false
+end
+
 onedark.setup({
 	style = "darker",
-	transparent = true,
+	transparent = transparent,
 })
 
 onedark.load()
