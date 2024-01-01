@@ -31,6 +31,7 @@ local plugins = {
 	{ "simrat39/rust-tools.nvim" },
 	{ "nvim-lualine/lualine.nvim" },
 	{ "norcalli/nvim-colorizer.lua" },
+	{ "github/copilot.vim" },
 	{
 		"nvim-telescope/telescope.nvim",
 		--tag = "0.1.2",
