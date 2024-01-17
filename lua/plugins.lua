@@ -13,7 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
 	{ "stevearc/dressing.nvim", event = "VeryLazy" },
-	{ "navarasu/onedark.nvim" },
+	{ "ellisonleao/gruvbox.nvim", priority = 1000, config = true },
 	{ "lewis6991/gitsigns.nvim" },
 	{ "williamboman/mason.nvim" },
 	{ "williamboman/mason-lspconfig.nvim" },
