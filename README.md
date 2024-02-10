@@ -14,6 +14,7 @@ You also have the added benefit of becoming a true Vim chad once you start using
 
 - [Git](https://github.com/git/git)
 - [Neovim](https://github.com/neovim/neovim)
+- [Make](https://www.gnu.org/software/make)
 
 # Optional Dependencies
 
