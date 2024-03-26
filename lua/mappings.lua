@@ -25,14 +25,11 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 -- Telescope fuzzy finder
 local telescope_status_ok, telescope = pcall(require, "telescope.builtin")
 if telescope_status_ok then
-	keymap("n", "<Leader>gf", telescope.find_files, {})
-	keymap("n", "<Leader>gl", telescope.live_grep, {})
-	keymap("n", "<Leader>gb", telescope.buffers, {})
-	keymap("n", "<Leader>gt", telescope.treesitter, {})
+	keymap("n", "<Leader>ff", telescope.find_files, {})
+	keymap("n", "<Leader>ll", telescope.live_grep, {})
+	keymap("n", "<Leader>bb", telescope.buffers, {})
+	keymap("n", "<Leader>tt", telescope.treesitter, {})
 end
-
--- Toggle file tree
-keymap("n", "<Leader>n", ":Neotree toggle<CR>", opts)
 
 -- Lsp controls
 keymap("n", "<Leader>ls", ":LspStart<CR>", opts)
@@ -41,6 +38,9 @@ keymap("n", "<Leader>lr", ":LspRestart<CR>", opts)
 keymap("n", "<Leader>li", ":LspInfo<CR>", opts)
 
 -- Buffer controls
-keymap("n", "<Leader>bd", ":bdelete<CR>", opts)
+keymap("n", "<Leader>BB", ":bdelete<CR>", opts)
 keymap("n", "<Leader>jj", ":bprevious<CR>", opts)
 keymap("n", "<Leader>kk", ":bnext<CR>", opts)
+
+keymap("n", "P", '"+p', opts)
+keymap("v", "Y", '"+y', opts)
