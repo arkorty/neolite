@@ -44,3 +44,16 @@ keymap("n", "<Leader>kk", ":bnext<CR>", opts)
 
 keymap("n", "P", '"+p', opts)
 keymap("v", "Y", '"+y', opts)
+
+-- Toggleterm controls
+function _G.set_terminal_keymaps()
+	local topts = { buffer = 0 }
+	keymap("t", "<esc>", [[<C-\><C-n>]], topts)
+	keymap("t", "<C-h>", [[<Cmd>wincmd h<CR>]], topts)
+	keymap("t", "<C-j>", [[<Cmd>wincmd j<CR>]], topts)
+	keymap("t", "<C-k>", [[<Cmd>wincmd k<CR>]], topts)
+	keymap("t", "<C-l>", [[<Cmd>wincmd l<CR>]], topts)
+	keymap("t", "<C-w>", [[<C-\><C-n><C-w>]], topts)
+end
+
+vim.cmd("autocmd! TermOpen term://*toggleterm#* lua set_terminal_keymaps()")
